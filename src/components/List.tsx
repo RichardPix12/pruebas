@@ -3,11 +3,11 @@ interface Props{
         nick: string
         avatar: string
         subMonths: number
-    description?: string
+      description?: string
     }>
 }
 
-export default function List({subs}:Props){
+const List  = ({subs}:Props) => {
     return(
         <ul>
         {
@@ -24,3 +24,5 @@ export default function List({subs}:Props){
       </ul>
     )
 }
+
+export default List
